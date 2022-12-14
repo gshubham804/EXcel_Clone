@@ -1,79 +1,125 @@
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-body{
-    padding: 0;
-    margin: 0;
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.page-actions-cont{
-    height: 3rem;
-    background-color: #218c74;
-    display: flex;
-    align-items: flex-end;
+.page-actions-cont {
+  height: 3rem;
+  background-color: #218c74;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
 }
 
-.page-action{
-    margin: 0.5rem;
-    color: #f1f2f6;
+.page-action {
+  margin: 0.5rem;
+  color: #f1f2f6;
 }
 
-.cellprop-actions-cont{
-    height: 3rem;
-    background-color: lightsalmon;
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
+.cellprop-actions-cont {
+  height: 3rem;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
 }
 
-.cellprop-actions-cont>*{
-    display: inline-block;
-    margin-right: 1rem;
+.cellprop-actions-cont > * {
+  display: inline-block;
+  margin-right: 1rem;
 }
 
-.cellprop-actions-cont>select{
-    border: none;
-    border-radius: 2px;
-    outline: none;
+.cellprop-actions-cont > select {
+  border: none;
+  border-radius: 2px;
+  outline: none;
 }
 
-.font-family-prop{
-    padding: 0.2rem;
+.font-family-prop {
+  padding: 0.2rem;
 }
 
-.font-size-prop{
-    padding: 0.2rem;
+.font-size-prop {
+  padding: 0.2rem;
 }
 
-.formula-actions-cont{
-    height: 3rem;
-    background-color: lightblue;
+.formula-actions-cont {
+  height: 2rem;
+  background-color: #ecf0f1;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
 }
 
-.sheet-actions-cont{
-    height: 3rem;
-    background-color: lightcoral;
-    display: flex;
-    align-items: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+.formula-actions-cont > * {
+  display: inline-block;
+  margin-right: 0.7rem;
 }
 
-.sheets-actions-cont>*{
-    display: inline-block;
+.formula-icon {
+  width: 1.2rem;
 }
 
-.sheet-add-icon{
-    width: 2vw;
+.address-bar {
+  width: 5rem;
 }
 
-.sheets-folder-cont{
-    height: 80%;
-    background-color: yellow;
-    width: calc(100vw - 2vw);
+.formula-bar {
+  width: calc(100vw - 5rem - 0.7rem - 0.7rem - 0.7rem);
+  padding-left: 0.8rem;
 }
 
-.grid-cont{
-    height: calc(100vh - 3rem - 3rem - 3rem - 3rem);
+.formula-actions-cont > input {
+  border: none;
+  outline: none;
+  height: 70%;
+}
+
+.sheet-actions-cont {
+  height: 3rem;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 1rem;
+}
+
+.sheets-actions-cont > * {
+  display: inline-block;
+}
+
+.sheet-add-icon {
+  width: 2vw;
+}
+
+.sheets-folder-cont {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  width: calc(100vw - 2vw);
+}
+
+.sheet-folder {
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-thickness: 2px;
+  font-size: 0.9rem;
+}
+
+.grid-cont {
+  height: calc(100vh - 2rem - 3rem - 3rem - 3rem);
+}
+
+.top-left-dummy-box {
+  height: 2rem;
+  width: 2rem;
+  background-color: #747d8c;
 }
