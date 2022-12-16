@@ -31,6 +31,8 @@ for(let i=0;i<rows;i++)
         let cell = document.createElement("div");
         cell.setAttribute("class", "cell");
         cell.setAttribute("contenteditable","true");
+        cell.setAttribute("rid",i);
+        cell.setAttribute("cid",j);
         rowCont.appendChild(cell);
         addListenerForAddressBarDisplay(cell,i,j);
     }
@@ -44,3 +46,8 @@ cell.addEventListener("click",(e)=>{
     addressBar.value=`${colId}${rowId}`;
 })
 }
+
+// By default click on first cell
+
+let firstCell = document.querySelector(".cell");
+firstCell.click();
